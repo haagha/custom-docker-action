@@ -14,5 +14,5 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
-  pre-entrypoint: 'chmod +x entrypoint.sh'
+  pre-entrypoint: 'pre-entrypoint.sh'
   entrypoint: 'entrypoint.sh'
